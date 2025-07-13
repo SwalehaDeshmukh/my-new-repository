@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Elite Fitness Gym</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      height: 80vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px 40px;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .plans {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      flex: 1 1 300px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .card h2 {
+      color: #0077cc;
+      margin-bottom: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .offers {
+      background-color: #0077cc;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 40px;
+    }
+
+    .offers h2 {
+      margin-bottom: 20px;
+    }
+
+    .signup-btn {
+      display: inline-block;
+      margin-top: 30px;
+      background: white;
+      color: #0077cc;
+      padding: 15px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .signup-btn:hover {
+      background: #f1f1f1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      .plans {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Welcome to Elite Fitness Gym</h1>
+  </header>
+
+  <!-- Membership Plans -->
+  <section>
+    <h2 style="text-align:center; margin-bottom: 30px;">Our Membership Plans</h2>
+    <div class="plans">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1579758629938-03608ccdbaba?auto=format&fit=crop&w=600&q=60" alt="basic plan">
+        <h2>Basic Plan</h2>
+        <p>Access to gym equipment, cardio zone, and locker rooms. Ideal for beginners.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=600&q=60" alt="premium plan">
+        <h2>Premium Plan</h2>
+        <p>Includes group classes, personal training once a week, steam & sauna access.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1611426350924-d2a6cfc51aa8?auto=format&fit=crop&w=600&q=60" alt="vip plan">
+        <h2>VIP Plan</h2>
+        <p>All-access pass: unlimited personal training, nutritionist consults, and 24/7 entry.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offers Section -->
+  <div class="offers">
+    <h2>🔥 Limited Time Offer</h2>
+    <p>Join now and get <strong>20% OFF</strong> on all annual memberships!<br>
+       Offer valid till <em>31st July 2025</em>.</p>
+    <a href="singup.html" class="signup-btn">Sign Up Now</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Elite Fitness Gym. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
